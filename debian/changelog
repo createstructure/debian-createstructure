@@ -1,4 +1,10 @@
-manager (09.01.01) focal; urgency=medium
+createstructure (09.01.02) focal; urgency=medium
+
+  * Fixed a bug
+
+ -- Castellani Davide <help@castellanidavide.it>  Sat, 17 Jul 2021 18:45:00 +1000
+
+createstructure (09.01.01) focal; urgency=medium
 
   * Initial version
 
