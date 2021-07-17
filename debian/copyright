@@ -1,0 +1,8 @@
+Format: https://github.com/createstructure/debian-createstructure/blob/main/docs/LICENSE
+Upstream-Name: Castellani Davide
+Upstream-Contact: Castellani Davide <help@castellanidavide.it>
+Source: https://github.com/createstructure/debian-createstructureblob/main/docs/LICENSE
+
+Files: *
+Copyright: 2020-2021 Castellani Davide <help@castellanidavide.it>
+License: GNU
