@@ -1,8 +1,10 @@
 // Dependencies
 #include <bits/stdc++.h>
-#include "libraries/bin/json.hpp"
-#include "libraries/bin/createstructure.hpp"
-#include "createstructure_modules.hpp"
+#include "libraries/bin/createstructure_inputs.hpp"
+#include "libraries/bin/createstructure_help.hpp"
+#include "libraries/bin/createstructure_login.hpp"
+#include "libraries/bin/createstructure_setting.hpp"
+#include "libraries/bin/createstructure_debian.hpp"
 
 // using ...
 using namespace std;
@@ -25,19 +27,29 @@ int main(int argc, char *argv[])
 	 */
 
 	inputs i(argc, argv);
+#ifdef DEBUG
 	cout << i.to_string() << endl;
+#endif // DEBUG
 
-	help h(i);
+	help h(i, "createstructure");
+#ifdef DEBUG
 	cout << h.to_string() << endl;
+#endif // DEBUG
 
 	login l(i);
+#ifdef DEBUG
 	cout << l.to_string() << endl;
+#endif // DEBUG
 
 	setting s;
+#ifdef DEBUG
 	cout << s.to_string() << endl;
+#endif // DEBUG
 
-	createstructure c(i, s);
-	cout << c.to_string() << endl;
+	debian d(i, s);
+#ifdef DEBUG
+	cout << d.to_string() << endl;
+#endif // DEBUG
 
 	return 0;
 }

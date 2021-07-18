@@ -1,3 +1,9 @@
+createstructure (09.01.03) focal; urgency=medium
+
+  * Optimized librerias management
+
+ -- Castellani Davide <help@castellanidavide.it>  Sun, 18 Jul 2021 11:15:00 +1000
+
 createstructure (09.01.02) focal; urgency=medium
 
   * Fixed a bug
