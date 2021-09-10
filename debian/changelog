@@ -1,3 +1,9 @@
+createstructure (09.01.05) focal; urgency=medium
+
+  * Fixed an [issue](https://github.com/createstructure/libraries-createstructure/issues/1)
+
+ -- Castellani Davide <help@castellanidavide.it>  Fri, 10 Sep 2021 22:15:00 +1000
+
 createstructure (09.01.04) focal; urgency=medium
 
   * Updated libraries to v09.01.11
