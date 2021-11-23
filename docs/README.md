@@ -1,6 +1,6 @@
 ## :octocat: Description :octocat:
 Debian client app
-![createstructure/debian-createstructure](https://opengraph.githubassets.com/0dfa4df52a0b9eee705e9f98d36e235bc5c2608d42ce1b0bb269ae0737f4c598/createstructure/debian-createstructure)
+![createstructure/debian-createstructure](https://opengraph.githubassets.com/ffec71b52f5a8aad89c032753b480a607568cc335e0d8769b84c26c05163c2ad/createstructure/debian-createstructure)
 ## :octocat: Directory structure :octocat:
 
 ```
@@ -8,7 +8,6 @@ Debian client app
 ├── Makefile
 ├── bin # source code
 │   ├── createstructure.cpp
-│   ├── createstructure.setting
 │   ├── global-libraries
 │   │   ├── bin # source code
 │   │   │   ├── cryptation.hpp
@@ -50,7 +49,7 @@ Debian client app
     ├── LICENSE
     └── README.md
 
-9 directories, 35 files
+9 directories, 34 files
 ```
 createstructure (09.01.06) focal; urgency=medium
 
