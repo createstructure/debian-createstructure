@@ -38,6 +38,8 @@ private:
     string username;
     string token;
 
+    void loginMissing();
+
 public:
     Settings(string username = "", string token = "");
     bool load();
@@ -72,6 +74,15 @@ Settings::Settings(string username, string token)
     {
         Settings::save();
     }
+}
+
+void Settings::loginMissing()
+{
+    /**
+     * Login missing
+     */
+    system("man createstructure.2");
+    exit(EXIT_SUCCESS);
 }
 
 bool Settings::load()
@@ -125,6 +136,8 @@ string Settings::getUsername()
      *
      * @return: username
      */
+    if (Settings::username == "" || Settings::username.empty())
+        Settings::loginMissing();
     return Settings::username;
 }
 
@@ -135,6 +148,8 @@ string Settings::getToken()
      *
      * @return: token
      */
+    if (Settings::token == "" || Settings::token.empty())
+        Settings::loginMissing();
     return Settings::token;
 }
 
