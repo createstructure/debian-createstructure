@@ -17,14 +17,10 @@ Debian client app
 │   │   │   ├── positive.hpp
 │   │   │   ├── rest.hpp
 │   │   │   └── sleep.hpp
-│   │   ├── docs # documentation
-│   │   │   ├── CHANGELOG.md
-│   │   │   ├── LICENSE
-│   │   │   ├── README.md
-│   │   │   └── dependeces.svg
-│   │   └── workflows
-│   │       ├── push.yml
-│   │       └── release.yml
+│   │   └── docs # documentation
+│   │       ├── CHANGELOG.md
+│   │       ├── LICENSE
+│   │       └── README.md
 │   └── local-libraries
 │       ├── create.hpp
 │       ├── help.hpp
@@ -32,6 +28,7 @@ Debian client app
 │       ├── settings.hpp
 │       └── version.hpp
 ├── createstructure.1
+├── createstructure.2
 ├── createstructure.in
 ├── debian # debian control code
 │   ├── changelog
@@ -49,7 +46,7 @@ Debian client app
     ├── LICENSE
     └── README.md
 
-9 directories, 34 files
+8 directories, 32 files
 ```
 createstructure (09.01.06) focal; urgency=medium
 
