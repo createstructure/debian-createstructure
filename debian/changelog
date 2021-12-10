@@ -1,4 +1,4 @@
-manager (10.01.01) focal; urgency=medium
+createstructure (10.01.01) focal; urgency=medium
 
   * [Adapt Debian application to the new REST API](https://github.com/createstructure/manager-createstructure/issues/2)
   * [Make it easier for the consumer the login management](https://github.com/createstructure/manager-createstructure/issues/3)
