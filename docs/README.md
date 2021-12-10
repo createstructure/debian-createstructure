@@ -1,28 +1,41 @@
 # debian-createstructure
-[![GitHub license](https://img.shields.io/badge/license-GNU-green?style=flat)](https://github.com/CastellaniDavide/debian-createstructure-debian-createstructure/blob/master/LICENSE) ![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat) ![Version](https://img.shields.io/badge/version-v1.0-blue?style=flat) ![Language ...](https://img.shields.io/badge/language-...-yellowgreen?style=flat) ![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-...-blue?style=flat) [![On GitHub](https://img.shields.io/badge/on%20GitHub-True-green?style=flat&logo=github)](https://github.com/createstructure/debian-createstructure)
+[![GitHub license](https://img.shields.io/badge/license-GNU-green?style=flat)](https://github.com/createstructure/debian-createstructure/blob/v10-beta/docs/LICENSE)
+![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat)
+![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-all-blue?style=flat) 
 
-## Description
-Repo containing the clientside for Ubuntu/Debian
+##  Description 
+Debian client app
+![createstructure/debian-createstructure](https://opengraph.githubassets.com/ffec71b52f5a8aad89c032753b480a607568cc335e0d8769b84c26c05163c2ad/createstructure/debian-createstructure)
+##  Directory structure 
 
-## Table of contents
-- [debian-createstructure](#debian-createstructure)
-  - [Description](#description)
-  - [Table of contents](#table-of-contents)
-  - [Directories structure](#directories-structure)
-  - [Installation](#installation)
-    - [Requirements](#requirements)
-    - [Install](#install)
-    - [Run](#run)
-  - [Repo dependencies](#repo-dependencies)
-
-
-## Directories structure
 ```
-├── bin
-│   ├── libraries
-│   │   └── ...
-│   └── createstructure.cpp
-├── debian
+../repo
+├── Makefile
+├── bin # source code
+│   ├── createstructure.cpp
+│   ├── global-libraries
+│   │   ├── bin # source code
+│   │   │   ├── cryptation.hpp
+│   │   │   ├── emoji.hpp
+│   │   │   ├── inputs.hpp
+│   │   │   ├── json.hpp
+│   │   │   ├── positive.hpp
+│   │   │   ├── rest.hpp
+│   │   │   └── sleep.hpp
+│   │   └── docs # documentation
+│   │       ├── CHANGELOG.md
+│   │       ├── LICENSE
+│   │       └── README.md
+│   └── local-libraries
+│       ├── create.hpp
+│       ├── help.hpp
+│       ├── login.hpp
+│       ├── settings.hpp
+│       └── version.hpp
+├── createstructure.1
+├── createstructure.2
+├── createstructure.in
+├── debian # debian control code
 │   ├── changelog
 │   ├── compat
 │   ├── control
@@ -34,37 +47,119 @@ Repo containing the clientside for Ubuntu/Debian
 │   ├── rules
 │   └── source
 │       └── format
-├── docs
-│   ├── LICENSE
-│   └── README.md
-├── .git
-│   └── ...
-├── .github
-│   └── workflows
-│       └── publish.yml
-├── Makefile
-├── createstructure.1
-└── requirements.in
+└── docs # documentation
+    ├── LICENSE
+    └── README.md
 
+8 directories, 32 files
 ```
+createstructure (10.01.01) focal; urgency=medium
 
-## Installation
-### Requirements
- - apt
- 
-### Install
- - `sudo add-apt-repository ppa:castellanidavide/createstructure; sudo apt update; sudo apt install createstructure`
+  * [Adapt Debian application to the new REST API](https://github.com/createstructure/manager-createstructure/issues/2)
+  * [Make it easier for the consumer the login management](https://github.com/createstructure/manager-createstructure/issues/3)
 
-### Run
- - `createstructure`
+ -- Castellani Davide <help@castellanidavide.it>  Fri, 10 Dec 2021 22:15:00 +1000
 
-## Repo dependencies
- - [nlohmann/json](https://github.com/nlohmann/json)
+createstructure (09.01.06) focal; urgency=medium
 
+  * Fixed a problem of an [issue](https://github.com/createstructure/libraries-createstructure/issues/1)
+
+ -- Castellani Davide <help@castellanidavide.it>  Fri, 10 Sep 2021 23:00:00 +1000
+
+createstructure (09.01.05) focal; urgency=medium
+
+  * Fixed an [issue](https://github.com/createstructure/libraries-createstructure/issues/1)
+
+ -- Castellani Davide <help@castellanidavide.it>  Fri, 10 Sep 2021 22:15:00 +1000
+
+createstructure (09.01.04) focal; urgency=medium
+
+  * Updated libraries to v09.01.11
+  * Updated .gitignore file
+
+ -- Castellani Davide <help@castellanidavide.it>  Sun, 18 Jul 2021 14:15:00 +1000
+
+createstructure (09.01.03) focal; urgency=medium
+
+  * Optimized libraries management
+
+ -- Castellani Davide <help@castellanidavide.it>  Sun, 18 Jul 2021 11:15:00 +1000
+
+createstructure (09.01.02) focal; urgency=medium
+
+  * Fixed a bug
+
+ -- Castellani Davide <help@castellanidavide.it>  Sat, 17 Jul 2021 18:45:00 +1000
+
+createstructure (09.01.01) focal; urgency=medium
+
+  * Initial version
+
+ -- Castellani Davide <help@castellanidavide.it>  Sat, 17 Jul 2021 18:30:00 +1000
+##  Rebuild the debian-createstructure locally 
+Install the manager-create locally permits you to do some debug and try new configurations.
+
+### Steps:
+- [ Rebuild the debian-createstructure locally ](#octocat-rebuild-the-debian-createstructure-locally-octocat)
+  - [Steps:](#steps)
+  - [1. Install VirtualBox on the PC](#1-install-virtualbox-on-the-pc)
+  - [2. Install Ubuntu](#2-install-ubuntu)
+  - [3. Install dependencies](#3-install-dependencies)
+  - [4. Compile](#4-compile)
+
+### 1. Install VirtualBox on the PC
+For installation we suggest VirtualBox, a tool that allows you to create one or more virtual machines :computer:.
+If any of these crashes, in any case, your PC will not lose data, at most you will have to restart it :smile:.
+
+To install VirtualBox on your PC you need to:
+- Get in into the UEFI
+- Enable the function which name is like "Virtualization" (for each UEFI this step is different but similar)
+- Save the configuration and restart the PC
+- Go to the [VirtualBox website](https://www.virtualbox.org/)
+- Press "Download"
+- Run the downloaded file
+- Follow the installation steps
+
+### 2. Install Ubuntu
+As the OS we suggest to use Ubuntu, because it is lightweight (for RAM and CPU) and it's free.
+
+To install Ubuntu on VirtualBox you need to:
+- Download the last LTS version of Ubuntu by the following link: [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop)
+> Now you can continue with the other steps during the download
+- Open VirtualBox
+- Press "New"
+- Compile the form
+    - As name put "rest-createstructure"
+    - As Type: "Linux"
+    - As version: "Ubuntu (64-bit)" or "Ubuntu (32-bit)"
+    - Press "Next >"
+- Set the RAM to use for the VirtualMachine, at most half of local RAM and press "Next >"
+- Leave "Create a virtual hard disk now" and press "Create"
+- Leave "VDI ..." and press "Next >"
+- Leave "Dynamically allocated" and press "Next >"
+- Change the hard disk memory, we suggest 16GB and press "Create"
+> Make sure that Ubuntu download is finished before to continue
+- On the VirtualBox console, selecting the created VM, press "Start"
+- Select as start-up disk Ubuntu, already downloaded
+    - Press the folder icon
+    - Press "Add", in the top menu
+    - Select the Ubuntu iso, the file will have a structure like "ubuntu-version-other_info.iso"
+    - Press "Choose" and "Start"
+- Follow the install steps (the installation needs some minutes)
+
+### 3. Install dependencies
+Now you have to install building dependencies.
+To install Dependes on the Virtual Machine you need to:
+- On the VM (Virtual Machine) open the terminal (`Ctrl + Alt + T`)
+- On the terminal paste `sudo apt update; sudo add-apt-repository ppa:jyrki-pulliainen/dh-virtualenv -y; sudo apt-get install git build-essential debhelper devscripts equivs dh-virtualenv python3.8 gnupg gnupg2 libcurl4-openssl-dev libssl-dev -y; git clone https://github.com/createstructure/debian-createstructure; cd debian-createstructure; echo "3.0 (native)" > ./debian/source/format` and insert password
+
+### 4. Compile
+To compile type: `dpkg-buildpackage -us -uc`
+Now the .deb file is in the .. folder, you can install it with apt.
 
 ---
-Made w/ :love: by Castellani Davide 
-If you have any problem please contact me:
-- [Discussion](https://github.com/createstructure/createstructure/discussions/new) and choose "createstructure-createstructure" category
-- [Issue](https://github.com/createstructure/createstructure-createstructure/issues/new)
-- [help@castellanidavide.it](mailto:help@castellanidavide.it)
+Made w/ :heart: by Castellani Davide
+
+If you want to contribute you can start with:
+- [Discussion](https://github.com/createstructure/debian-createstructure/discussions)
+- [Issue](https://github.com/createstructure/debian-createstructure/issues/new)
