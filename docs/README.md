@@ -5,7 +5,7 @@
 
 ##  Description 
 Debian client app
-![createstructure/debian-createstructure](https://opengraph.githubassets.com/a0f6fcf38cded2087bb1807332bea83f4bd447f1a4067ba826e3572972ae0854/createstructure/debian-createstructure)
+![createstructure/debian-createstructure](https://opengraph.githubassets.com/0a8572811e87b0bd55522a6c8b2831a0d4fcb4bf3fdbef180d19847b692dc82c/createstructure/debian-createstructure)
 ##  Directory structure 
 
 ```
@@ -53,7 +53,7 @@ Debian client app
 
 8 directories, 32 files
 ```
-manager (10.01.01) focal; urgency=medium
+createstructure (10.01.01) focal; urgency=medium
 
   * [Adapt Debian application to the new REST API](https://github.com/createstructure/manager-createstructure/issues/2)
   * [Make it easier for the consumer the login management](https://github.com/createstructure/manager-createstructure/issues/3)
