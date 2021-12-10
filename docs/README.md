@@ -1,7 +1,12 @@
-## :octocat: Description :octocat:
+# debian-createstructure
+[![GitHub license](https://img.shields.io/badge/license-GNU-green?style=flat)](https://github.com/createstructure/debian-createstructure/blob/v10-beta/docs/LICENSE)
+![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat)
+![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-all-blue?style=flat) 
+
+##  Description 
 Debian client app
 ![createstructure/debian-createstructure](https://opengraph.githubassets.com/ffec71b52f5a8aad89c032753b480a607568cc335e0d8769b84c26c05163c2ad/createstructure/debian-createstructure)
-## :octocat: Directory structure :octocat:
+##  Directory structure 
 
 ```
 ../repo
@@ -84,11 +89,11 @@ createstructure (09.01.01) focal; urgency=medium
   * Initial version
 
  -- Castellani Davide <help@castellanidavide.it>  Sat, 17 Jul 2021 18:30:00 +1000
-## :octocat: Rebuild the debian-createstructure locally :octocat:
+##  Rebuild the debian-createstructure locally 
 Install the manager-create locally permits you to do some debug and try new configurations.
 
 ### Steps:
-- [:octocat: Rebuild the debian-createstructure locally :octocat:](#octocat-rebuild-the-debian-createstructure-locally-octocat)
+- [ Rebuild the debian-createstructure locally ](#octocat-rebuild-the-debian-createstructure-locally-octocat)
   - [Steps:](#steps)
   - [1. Install VirtualBox on the PC](#1-install-virtualbox-on-the-pc)
   - [2. Install Ubuntu](#2-install-ubuntu)
