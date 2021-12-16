@@ -1,3 +1,9 @@
+createstructure (10.01.02) focal; urgency=medium
+
+  * Commented DEBUG define
+
+ -- Castellani Davide <help@castellanidavide.it>  Fri, 16 Dec 2021 15:30:00 +1000
+
 createstructure (10.01.01) focal; urgency=medium
 
   * [Adapt Debian application to the new REST API](https://github.com/createstructure/manager-createstructure/issues/2)

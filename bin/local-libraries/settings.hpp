@@ -20,7 +20,7 @@ using namespace std;
 using json = nlohmann::json;
 
 // Definitions
-#define DEBUG
+// #define DEBUG
 
 // Classes prototipe(s)
 class Settings
