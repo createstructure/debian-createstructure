@@ -5,7 +5,7 @@
 
 ##  Description 
 Debian client app
-![createstructure/debian-createstructure](https://opengraph.githubassets.com/c1de48e447d970d03bffa8fba387f1ae6fab7b0ec564188c29789b7ca37b63e7/createstructure/debian-createstructure)
+![createstructure/debian-createstructure](https://opengraph.githubassets.com/792b6924be25846152ac8cc1420923e7bd2c11c8ed99728dd8ad8cff0cb9a4ab/createstructure/debian-createstructure)
 ##  Directory structure 
 
 ```
