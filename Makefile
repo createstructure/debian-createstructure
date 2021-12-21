@@ -9,6 +9,7 @@ install:
 	echo "prefix: $(prefix)"
 	install createstructure $(DESTDIR)$(prefix)/bin
 	install -m 644 createstructure.1 $(DESTDIR)$(prefix)/share/man/man1/createstructure.1
+	install -m 755 -d $(DESTDIR)$(prefix)/share/man/man2
 	install -m 644 createstructure.2 $(DESTDIR)$(prefix)/share/man/man2/createstructure.2
 
 clean:
