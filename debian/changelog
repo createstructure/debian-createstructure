@@ -1,6 +1,12 @@
+createstructure (10.01.05) focal; urgency=medium
+
+  * Fixed a few bugs
+
+ -- Castellani Davide <help@castellanidavide.it>  Tue, 21 Dec 2021 18:30:00 +1000
+
 createstructure (10.01.04) focal; urgency=medium
 
-  * Fixed few bugs
+  * Fixed a few bugs
 
  -- Castellani Davide <help@castellanidavide.it>  Tue, 21 Dec 2021 18:00:00 +1000
 
