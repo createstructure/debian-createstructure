@@ -1,3 +1,9 @@
+createstructure (10.01.04) focal; urgency=medium
+
+  * Fixed few bugs
+
+ -- Castellani Davide <help@castellanidavide.it>  Tue, 21 Dec 2021 18:00:00 +1000
+
 createstructure (10.01.03) focal; urgency=medium
 
   * [Optimize login, make it easier](https://github.com/createstructure/debian-createstructure/issues/6)

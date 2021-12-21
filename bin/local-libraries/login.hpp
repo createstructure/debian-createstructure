@@ -70,17 +70,25 @@ Login::Login(Inputs i)
 #ifdef DEFAULT
         cout << "Auto-generate token" << endl;
 #endif // DEFAULT
-        try {
-
-        Login::getCode();
-        Login::insertCode();
-        while (Login::username == "" || Login::token == "" || Login::username.empty() || Login::token.empty())
+        try
         {
-            cout << "Press enter to continue, I will get the username and token automatically...";
-            cin.get();
-            Login::getToken();
+
+            Login::getCode();
+            Login::insertCode();
+            bool firstTime = true;
+            while (Login::username == "" || Login::token == "" || Login::username.empty() || Login::token.empty())
+            {
+                if (!firstTime)
+                {
+                    cout << "Invalid credentials, try again. If the problem persists, please contact createstructure's team: https://github.com/createstructure/debian-createstructure/discussions" << endl;
+                }
+                cout << "Press enter to continue, I will get the username and token automatically...";
+                cin.get();
+                Login::getToken();
+            }
         }
-        } catch (exception &e) {
+        catch (exception &e)
+        {
             cout << Emoji::getEmoji("x") << "\tError: " << e.what() << endl;
             cout << Emoji::getEmoji("x") << "\tPlease, check your internet connection and try again." << endl;
             exit(EXIT_FAILURE);
@@ -109,7 +117,9 @@ void Login::getCode()
      *
      */
     // Request the code to the server
+#ifdef DEBUG
     cout << Rest::textRequest(Login::LINK_GET_CODE, "", {{"client_id", Login::CLIENT_ID}, {"scope", Login::SCOPE}}, true) << endl;
+#else // DEBUG
     json response = Rest::jsonRequest(Login::LINK_GET_CODE, "", {{"client_id", Login::CLIENT_ID}, {"scope", Login::SCOPE}}, true);
     deviceCode = response["device_code"].get<string>();
     userCode = response["user_code"].get<string>();
@@ -150,7 +160,6 @@ void Login::getToken()
 #endif // DEBUG
 
     // Get the username
-    cout << Rest::GITHUB_REST_API + "user" << endl;
     json user = Rest::jsonRequest(Rest::GITHUB_REST_API + "user", Login::token);
 
     Login::username = user["login"].get<string>();

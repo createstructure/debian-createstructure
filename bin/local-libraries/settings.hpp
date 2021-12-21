@@ -81,7 +81,7 @@ void Settings::loginMissing()
     /**
      * Login missing
      */
-    system("man createstructure.2");
+    system("man 2 createstructure");
     exit(EXIT_SUCCESS);
 }
 
