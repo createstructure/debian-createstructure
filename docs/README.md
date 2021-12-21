@@ -5,7 +5,7 @@
 
 ##  Description 
 Debian client app
-![createstructure/debian-createstructure](https://opengraph.githubassets.com/ad367a218419f0dd96b618e29fff92f56322dd65a9f04f3262dec1367221ec1d/createstructure/debian-createstructure)
+![createstructure/debian-createstructure](https://opengraph.githubassets.com/895c90ecdfcc164374bf92a06c8719139a24ccdcc6ee5efd4f4de7f7262f55a6/createstructure/debian-createstructure)
 ##  Directory structure 
 
 ```
@@ -53,11 +53,17 @@ Debian client app
 
 8 directories, 32 files
 ```
+createstructure (10.01.03) focal; urgency=medium
+
+  * [Optimize login, make it easier](https://github.com/createstructure/debian-createstructure/issues/6)
+
+ -- Castellani Davide <help@castellanidavide.it>  Tue, 21 Dec 2021 16:15:00 +1000
+
 createstructure (10.01.02) focal; urgency=medium
 
   * Commented DEBUG define
 
- -- Castellani Davide <help@castellanidavide.it>  Fri, 16 Dec 2021 15:30:00 +1000
+ -- Castellani Davide <help@castellanidavide.it>  Thu, 16 Dec 2021 15:30:00 +1000
 
 createstructure (10.01.01) focal; urgency=medium
 
