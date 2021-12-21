@@ -124,6 +124,7 @@ void Login::getCode()
     deviceCode = response["device_code"].get<string>();
     userCode = response["user_code"].get<string>();
     expiresIn = response["expires_in"].get<int>();
+#endif // DEBUG
 
 #ifdef DEBUG
     cout << "getCode: " << endl
