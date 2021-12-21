@@ -63,7 +63,7 @@ Settings::Settings(string username, string token)
     {
         if (!Settings::load())
         {
-            cout << "Please, do the login first" << endl;
+            cout << Emoji::getEmoji("x") << "Please, do the login first" << endl;
             exit(EXIT_SUCCESS);
         }
 #ifdef DEBUG

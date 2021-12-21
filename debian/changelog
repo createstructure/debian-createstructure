@@ -1,8 +1,14 @@
+createstructure (10.01.03) focal; urgency=medium
+
+  * [Optimize login, make it easier](https://github.com/createstructure/debian-createstructure/issues/6)
+
+ -- Castellani Davide <help@castellanidavide.it>  Tue, 21 Dec 2021 16:15:00 +1000
+
 createstructure (10.01.02) focal; urgency=medium
 
   * Commented DEBUG define
 
- -- Castellani Davide <help@castellanidavide.it>  Fri, 16 Dec 2021 15:30:00 +1000
+ -- Castellani Davide <help@castellanidavide.it>  Thu, 16 Dec 2021 15:30:00 +1000
 
 createstructure (10.01.01) focal; urgency=medium
 
