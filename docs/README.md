@@ -5,7 +5,7 @@
 
 ##  Description 
 Debian client app
-![createstructure/debian-createstructure](https://opengraph.githubassets.com/24badbbc06845a8674d94f141fb3dea22a047f70913c4a711f50f984f5d1ceb2/createstructure/debian-createstructure)
+![createstructure/debian-createstructure](https://opengraph.githubassets.com/634d64ce9dfd157de1c6e92e1a82de53df01e6e29e960bf700ed6dd8c68c153e/createstructure/debian-createstructure)
 ##  Directory structure 
 
 ```
@@ -53,6 +53,12 @@ Debian client app
 
 8 directories, 32 files
 ```
+createstructure (10.01.07) focal; urgency=medium
+
+  * [Add sponsorship button](https://github.com/createstructure/createstructure.github.io/issues/36)
+
+ -- Castellani Davide <help@castellanidavide.it>  Wed, 5 Jan 2020 14:00:00 +1000
+
 createstructure (10.01.06) focal; urgency=medium
 
   * Fixed a few bugs
