@@ -62,10 +62,8 @@ Settings::Settings(string username, string token)
     if (Settings::username == "" || Settings::username.empty() || Settings::token == "" || Settings::token.empty())
     {
         if (!Settings::load())
-        {
-            cout << Emoji::getEmoji("x") << "Please, do the login first" << endl;
-            exit(EXIT_SUCCESS);
-        }
+            Settings::loginMissing();
+
 #ifdef DEBUG
         cout << "Loaded settings" << endl;
 #endif // DEBUG

@@ -140,7 +140,7 @@ void Login::insertCode()
      */
     // Ask the user to insert the code
     cout << "To create a new token, automatically, go to the following link: " << Login::LINK_INSERT_CODE << endl;
-    cout << "... and this code: " << Login::userCode << endl;
+    cout << "... and insert this code: " << Login::userCode << endl;
 }
 
 void Login::getToken()
