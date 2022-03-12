@@ -52,9 +52,10 @@ Debian client app
 └── docs # documentation
     ├── LICENSE
     ├── README.md
+    ├── debian # debian control code-createstructure-Class-UML.svg
     └── debian-createstructure.drawio
 
-8 directories, 33 files
+8 directories, 34 files
 ```
 createstructure (10.01.07) focal; urgency=medium
 
