@@ -1,15 +1,13 @@
 # debian-createstructure
-[![GitHub license](https://img.shields.io/badge/license-GNU-green?style=flat)](https://github.com/createstructure/debian-createstructure/blob/UML-beta/docs/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-GNU-green?style=flat)](https://github.com/createstructure/debian-createstructure/blob/main/docs/LICENSE)
 ![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat)
 ![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-all-blue?style=flat) 
 
 ##  Description 
 Debian client app
 ![createstructure/debian-createstructure](https://opengraph.githubassets.com/fc1bc3722cd31b2e2ba43f4700a3bf83420a40e8657a693e0e5187f05a69e6c0/createstructure/debian-createstructure)
-
 ##  Class UML 
-![Class UML](https://raw.githubusercontent.com/createstructure/debian-createstructure/UML-beta/docs/debian-createstructure-Class-UML.svg)
-
+![Class UML](https://raw.githubusercontent.com/createstructure/debian-createstructure/main/docs/debian-createstructure-Class-UML.svg)
 ##  Directory structure 
 
 ```
@@ -59,7 +57,7 @@ Debian client app
     ├── debian # debian control code-createstructure-Class-UML.svg
     └── debian-createstructure.drawio
 
-8 directories, 34 files
+8 directories, 36 files
 ```
 createstructure (10.01.08) focal; urgency=medium
 
