@@ -23,7 +23,7 @@ jobs:
         git config user.email "help@castellanidavide.it"
         git add *
         git commit -m "Exported UML automatically"
-        git pull https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git
+        git pull https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git --rebase
         git push https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git
 
   upgrade-documentation:
@@ -203,7 +203,7 @@ jobs:
           git config user.email "help@castellanidavide.it"
           git add *
           git commit -m "Upgrade by automatic action"
-          git pull https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.wiki.git
+          git pull https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.wiki.git --rebase
           git push https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.wiki.git
         }
     - name: git add & commit & upload repo
@@ -214,5 +214,5 @@ jobs:
         git config user.email "help@castellanidavide.it"
         git add *
         git commit -m "Upgrade by automatic action"
-        git pull https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git
+        git pull https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git --rebase
         git push https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git
