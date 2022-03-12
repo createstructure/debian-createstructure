@@ -1,11 +1,11 @@
 # debian-createstructure
-[![GitHub license](https://img.shields.io/badge/license-GNU-green?style=flat)](https://github.com/createstructure/debian-createstructure/blob/main/docs/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-GNU-green?style=flat)](https://github.com/createstructure/debian-createstructure/blob/UML-beta/docs/LICENSE)
 ![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat)
 ![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-all-blue?style=flat) 
 
 ##  Description 
 Debian client app
-![createstructure/debian-createstructure](https://opengraph.githubassets.com/634d64ce9dfd157de1c6e92e1a82de53df01e6e29e960bf700ed6dd8c68c153e/createstructure/debian-createstructure)
+![createstructure/debian-createstructure](https://opengraph.githubassets.com/fc1bc3722cd31b2e2ba43f4700a3bf83420a40e8657a693e0e5187f05a69e6c0/createstructure/debian-createstructure)
 ##  Directory structure 
 
 ```
@@ -49,9 +49,10 @@ Debian client app
 │       └── format
 └── docs # documentation
     ├── LICENSE
-    └── README.md
+    ├── README.md
+    └── debian-createstructure.drawio
 
-8 directories, 32 files
+8 directories, 33 files
 ```
 createstructure (10.01.07) focal; urgency=medium
 
