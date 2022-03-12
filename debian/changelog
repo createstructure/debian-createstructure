@@ -1,8 +1,14 @@
+createstructure (10.01.08) focal; urgency=medium
+
+  * [Added charts automation](https://github.com/createstructure/debian-createstructure/issues/7)
+
+ -- Castellani Davide <help@castellanidavide.it>  Sat, 12 Mar 2022 11:00:00 +1000
+
 createstructure (10.01.07) focal; urgency=medium
 
   * [Add sponsorship button](https://github.com/createstructure/createstructure.github.io/issues/36)
 
- -- Castellani Davide <help@castellanidavide.it>  Wed, 5 Jan 2020 14:00:00 +1000
+ -- Castellani Davide <help@castellanidavide.it>  Wed, 5 Jan 2022 14:00:00 +1000
 
 createstructure (10.01.06) focal; urgency=medium
 
