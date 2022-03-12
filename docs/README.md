@@ -5,7 +5,7 @@
 
 ##  Description 
 Debian client app
-![createstructure/debian-createstructure](https://opengraph.githubassets.com/634d64ce9dfd157de1c6e92e1a82de53df01e6e29e960bf700ed6dd8c68c153e/createstructure/debian-createstructure)
+![createstructure/debian-createstructure](https://opengraph.githubassets.com/fc1bc3722cd31b2e2ba43f4700a3bf83420a40e8657a693e0e5187f05a69e6c0/createstructure/debian-createstructure)
 ##  Directory structure 
 
 ```
@@ -25,7 +25,9 @@ Debian client app
 │   │   └── docs # documentation
 │   │       ├── CHANGELOG.md
 │   │       ├── LICENSE
-│   │       └── README.md
+│   │       ├── README.md
+│   │       ├── libraries-createstructure-Class-UML.svg
+│   │       └── libraries-createstructure.drawio
 │   └── local-libraries
 │       ├── create.hpp
 │       ├── help.hpp
@@ -51,7 +53,7 @@ Debian client app
     ├── LICENSE
     └── README.md
 
-8 directories, 32 files
+8 directories, 34 files
 ```
 createstructure (10.01.07) focal; urgency=medium
 
