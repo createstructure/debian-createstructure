@@ -6,8 +6,10 @@
 ##  Description 
 Debian client app
 ![createstructure/debian-createstructure](https://opengraph.githubassets.com/fc1bc3722cd31b2e2ba43f4700a3bf83420a40e8657a693e0e5187f05a69e6c0/createstructure/debian-createstructure)
+
 ##  Class UML 
 ![Class UML](https://raw.githubusercontent.com/createstructure/debian-createstructure/UML-beta/docs/debian-createstructure-Class-UML.svg)
+
 ##  Directory structure 
 
 ```
@@ -27,7 +29,9 @@ Debian client app
 │   │   └── docs # documentation
 │   │       ├── CHANGELOG.md
 │   │       ├── LICENSE
-│   │       └── README.md
+│   │       ├── README.md
+│   │       ├── libraries-createstructure-Class-UML.svg
+│   │       └── libraries-createstructure.drawio
 │   └── local-libraries
 │       ├── create.hpp
 │       ├── help.hpp
